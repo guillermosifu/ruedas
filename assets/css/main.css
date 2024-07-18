@@ -585,6 +585,12 @@ background-size: cover;
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+.preloadimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #preloader {
   position: fixed;
   inset: 0;
