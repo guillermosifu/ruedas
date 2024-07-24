@@ -747,7 +747,7 @@ background-size: cover;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   position: relative;
 }
@@ -1973,7 +1973,7 @@ background-size: cover;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 475px) {
 
   .project-details .swiper-button-prev,
   .project-details .swiper-button-next {
