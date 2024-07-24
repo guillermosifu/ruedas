@@ -972,9 +972,10 @@ background-size: cover;
   height: 100%;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 475px) {
   .get-started .php-email-form {
-    padding: 20px;
+    padding: 40px;
+   
   }
 }
 
@@ -1152,7 +1153,7 @@ background-size: cover;
 --------------------------------------------------------------*/
 .alt-services .features-image {
   position: relative;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .alt-services .features-image img {
