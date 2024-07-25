@@ -60,6 +60,44 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+/* prueba  */
+.slider-container {
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  transition: transform 0.5s ease; /* Transición suave para el desplazamiento */
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  flex: 0 0 auto;
+  list-style: none; /* Quitamos los estilos de lista para que no haya viñetas */
+}
+
+.nav-item {
+  touch-action: pan-y; /* Permite el desplazamiento táctil en dispositivos móviles */
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+}
+/* fin  */
 .heart{
   margin-left: 15px;
   --size: 25px;
