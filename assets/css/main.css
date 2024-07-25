@@ -1280,6 +1280,14 @@ background-size: cover; */
   border: 0;
 }
 
+.slide {
+  overflow-x: auto;
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  padding-bottom: .4rem;
+}
+
 .features .nav-link {
   color: var(--heading-color);
   padding: 15px 0;
