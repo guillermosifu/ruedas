@@ -791,7 +791,7 @@ background-size: cover; */
 .section-title h2:before,
 .section-title h2:after {
   content: "";
-  width: 40px;
+  width: 30px;
   height: 2px;
   background: var(--accent-color);
   display: inline-block;
@@ -2363,7 +2363,12 @@ background-size: cover; */
   .contact .php-email-form {
     padding: 20px;
   }
+  .h2-lineas{
+    font-size: 28px;
+  }
 }
+
+
 
 .contact .php-email-form input[type="text"],
 .contact .php-email-form input[type="email"],
