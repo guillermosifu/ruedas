@@ -798,11 +798,11 @@ background-size: cover; */
 }
 
 .section-title h2:before {
-  margin: 0 15px 10px 0;
+  margin: 0 11px 10px 0;
 }
 
 .section-title h2:after {
-  margin: 0 0 10px 15px;
+  margin: 0 0 10px 12px;
 }
 
 .section-title p {
