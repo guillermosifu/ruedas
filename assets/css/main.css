@@ -1,24 +1,14 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Roboto",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roboto", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #364d59; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #52565e; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +19,12 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.55);  /* The default color of the main navmenu links */
+  --nav-color: rgba(
+    255,
+    255,
+    255,
+    0.55
+  ); /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -60,45 +55,40 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
-.heart{
+.heart {
   margin-left: 15px;
   --size: 25px;
   --color: red;
-  transform:rotate(45deg);
-  animation:beat 0.5s infinite alternate ease-in-out;
+  transform: rotate(45deg);
+  animation: beat 0.5s infinite alternate ease-in-out;
 }
-@keyframes beat{
-  to{
+@keyframes beat {
+  to {
     transform: rotate(45deg) scale(1.28);
   }
 }
 
 .heart,
 .heart::before,
-.heart::after{
-    width: var(--size);
-    height: var(--size);
-    background:var(--color);
+.heart::after {
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
 }
 .heart::before,
-.heart::after{
-  content:'';
+.heart::after {
+  content: "";
   display: block;
-  border-radius:50%;
+  border-radius: 50%;
 }
-.heart::before{
-  margin-top: calc(var(--size)*-.5);
- 
+.heart::before {
+  margin-top: calc(var(--size) * -0.5);
 }
-.heart::after{
-  margin-top: calc(var(--size)* -0.5);
-  margin-left: calc(var(--size)* -0.5);
+.heart::after {
+  margin-top: calc(var(--size) * -0.5);
+  margin-left: calc(var(--size) * -0.5);
 }
 /* -------------- */
-
-
-
-
 
 /* --------------*/
 body {
@@ -248,12 +238,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu>ul>li {
+  .navmenu > ul > li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu>ul>li:last-child {
+  .navmenu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -281,7 +271,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu>ul>li>a:before {
+  .navmenu > ul > li > a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -294,13 +284,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
+  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -340,11 +330,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -356,7 +346,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -388,9 +378,9 @@ h6 {
     margin: 0;
     border-radius: 6px;
     background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(88,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(50,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='17.16'%3E%3Cpath transform='translate(-120.4 20.8) rotate(11.2 1409 581) scale(1.025696)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='5.720000000000001' transform='translate(-94 76) rotate(16.8 800 450) scale(1.025808)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(49.2 -174) rotate(162 401 736) scale(1.025808)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='5.2'%3E%3Cpath transform='translate(456 -18.400000000000002) rotate(4.6000000000000005 150 345) scale(0.9472320000000001)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='11.440000000000001' transform='translate(-238 -196) rotate(187.2 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-388.8 123.2) rotate(31.2 1400 132) scale(0.94)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(88,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(50,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='17.16'%3E%3Cpath transform='translate(-120.4 20.8) rotate(11.2 1409 581) scale(1.025696)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='5.720000000000001' transform='translate(-94 76) rotate(16.8 800 450) scale(1.025808)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(49.2 -174) rotate(162 401 736) scale(1.025808)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='5.2'%3E%3Cpath transform='translate(456 -18.400000000000002) rotate(4.6000000000000005 150 345) scale(0.9472320000000001)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='11.440000000000001' transform='translate(-238 -196) rotate(187.2 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-388.8 123.2) rotate(31.2 1400 132) scale(0.94)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -460,7 +450,7 @@ background-size: cover;
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -487,7 +477,7 @@ background-size: cover;
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -498,8 +488,9 @@ background-size: cover;
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/navidad_INSNSB.jpg") top center no-repeat;
-  background-size: cover;
+  background: url("../img/compartir.jpg") no-repeat;
+
+  background-position: 60% 40%;
   font-size: 14px;
   position: relative;
 }
@@ -611,7 +602,8 @@ background-size: cover;
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -626,7 +618,7 @@ background-size: cover;
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-.preloadimg{
+.preloadimg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,7 +714,11 @@ background-size: cover;
 
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 40%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 40%
+  );
   position: absolute;
   inset: 0;
 }
@@ -744,11 +740,11 @@ background-size: cover;
   font-weight: 500;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -762,7 +758,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: #ffffff;
-/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(50,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='6.6'%3E%3Cpath transform='translate(-81.2 6.799999999999999) rotate(1.0999999999999996 1409 581) scale(0.9726060000000001)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='2.2' transform='translate(-90.5 59) rotate(7.2 800 450) scale(1.00881)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(19.500000000000004 -82.5) rotate(61.5 401 736) scale(1.00881)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='2'%3E%3Cpath transform='translate(354 -2.5999999999999996) rotate(0.6499999999999999 150 345) scale(0.9822019999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='4.4' transform='translate(-120.5 -158) rotate(61.20000000000002 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-236.4 67.6) rotate(10.200000000000001 1400 132) scale(0.895)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(50,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='6.6'%3E%3Cpath transform='translate(-81.2 6.799999999999999) rotate(1.0999999999999996 1409 581) scale(0.9726060000000001)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='2.2' transform='translate(-90.5 59) rotate(7.2 800 450) scale(1.00881)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(19.500000000000004 -82.5) rotate(61.5 401 736) scale(1.00881)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='2'%3E%3Cpath transform='translate(354 -2.5999999999999996) rotate(0.6499999999999999 150 345) scale(0.9822019999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='4.4' transform='translate(-120.5 -158) rotate(61.20000000000002 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-236.4 67.6) rotate(10.200000000000001 1400 132) scale(0.895)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover; */
   padding: 60px 0;
@@ -771,7 +767,6 @@ background-size: cover; */
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 76px;
@@ -835,8 +830,7 @@ background-size: cover; */
   padding: 140px 0 60px 0;
 }
 
-@media (max-width: 768px),
-(max-height: 480px) {
+@media (max-width: 768px), (max-height: 480px) {
   .hero .info {
     padding: 100px 50px 60px 50px;
   }
@@ -920,7 +914,11 @@ background-size: cover; */
 
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 30%
+  );
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1016,7 +1014,6 @@ background-size: cover; */
 @media (max-width: 475px) {
   .get-started .php-email-form {
     padding: 40px;
-   
   }
 }
 
@@ -1032,31 +1029,35 @@ background-size: cover; */
   margin-bottom: 20px;
 }
 
-.get-started .php-email-form input[type=text],
-.get-started .php-email-form input[type=email],
+.get-started .php-email-form input[type="text"],
+.get-started .php-email-form input[type="email"],
 .get-started .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 20%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.get-started .php-email-form input[type=text]:focus,
-.get-started .php-email-form input[type=email]:focus,
+.get-started .php-email-form input[type="text"]:focus,
+.get-started .php-email-form input[type="email"]:focus,
 .get-started .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.get-started .php-email-form input[type=text]::placeholder,
-.get-started .php-email-form input[type=email]::placeholder,
+.get-started .php-email-form input[type="text"]::placeholder,
+.get-started .php-email-form input[type="email"]::placeholder,
 .get-started .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.get-started .php-email-form button[type=submit] {
+.get-started .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1065,7 +1066,7 @@ background-size: cover; */
   border-radius: 4px;
 }
 
-.get-started .php-email-form button[type=submit]:hover {
+.get-started .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1156,7 +1157,8 @@ background-size: cover; */
   font-size: 22px;
   position: relative;
   display: inline-block;
-  border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--heading-color), transparent 90%);
   transition: 0.3s;
 }
 
@@ -1195,7 +1197,6 @@ background-size: cover; */
 .alt-services .features-image {
   position: relative;
   min-height: 300px;
-  
 }
 
 .alt-services .features-image img {
@@ -1285,7 +1286,7 @@ background-size: cover; */
   display: flex;
   gap: 2px;
   list-style: none;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
 }
 
 .features .nav-link {
@@ -1299,7 +1300,8 @@ background-size: cover; */
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 4px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .features .nav-link i {
@@ -1489,7 +1491,6 @@ background-size: cover; */
 # Testimonials Section
 --------------------------------------------------------------*/
 
-
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1501,7 +1502,6 @@ background-size: cover; */
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
-
 }
 
 .testimonials .testimonial-nuevo .testimonial-img {
@@ -1510,20 +1510,12 @@ background-size: cover; */
   border: 6px solid var(--background-color);
 }
 
-
-
-
-
-
-
-
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 60%);
   font-size: 26px;
   line-height: 0;
 }
-
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -1557,7 +1549,6 @@ background-size: cover; */
     padding: 30px;
     margin: 15px;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -1936,7 +1927,8 @@ background-size: cover; */
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
@@ -2025,7 +2017,6 @@ background-size: cover; */
 }
 
 @media (max-width: 475px) {
-
   .project-details .swiper-button-prev,
   .project-details .swiper-button-next {
     display: none;
@@ -2122,7 +2113,6 @@ background-size: cover; */
   float: left;
   margin: 0 10px 0 0;
 }
-
 
 .project-details .portfolio-description .testimonial-item h3 {
   font-size: 18px;
@@ -2243,7 +2233,6 @@ background-size: cover; */
 .blog-posts article:hover .post-img img {
   transform: scale(1.1);
 }
-
 
 /*--------------------------------------------------------------
 # Comment Form Section
@@ -2376,8 +2365,8 @@ background-size: cover; */
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -2388,19 +2377,19 @@ background-size: cover; */
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -2409,14 +2398,13 @@ background-size: cover; */
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 # Widgets
@@ -2452,7 +2440,7 @@ background-size: cover; */
   transition: 0.3s;
 }
 
-.search-widget form input[type=text] {
+.search-widget form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -2461,7 +2449,7 @@ background-size: cover; */
   color: var(--default-color);
 }
 
-.search-widget form input[type=text]:focus {
+.search-widget form input[type="text"]:focus {
   outline: none;
 }
 
